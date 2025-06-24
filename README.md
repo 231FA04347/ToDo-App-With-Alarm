@@ -32,6 +32,6 @@ todo-app-alarm/
 1. Clone the repository:
 ```bash
 git clone https://github.com/231FA04347/todo-app-alarm.git
-'''
+```
 ## Author
 Vajinepalli Bharath Chandra
