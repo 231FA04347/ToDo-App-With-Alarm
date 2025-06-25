@@ -31,7 +31,7 @@ todo-app-alarm/
 
 1. Clone the repository:
 ```bash
-https://smart-timer-app.netlify.app/
+https://task-timer-app.netlify.app/
 ```
 ## Author
 Vajinepalli Bharath Chandra
