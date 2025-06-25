@@ -31,7 +31,7 @@ todo-app-alarm/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/231FA04347/todo-app-alarm.git
+https://smart-timer-app.netlify.app/
 ```
 ## Author
 Vajinepalli Bharath Chandra
