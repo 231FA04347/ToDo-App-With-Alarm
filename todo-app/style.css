@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   text-align: center;
@@ -9,7 +9,6 @@ body {
   min-height: 100vh;
 }
 
-/* To-Do App Container */
 .todo-app {
   margin: 60px auto;
   padding: 32px 28px 28px 28px;
@@ -20,7 +19,6 @@ body {
   border: 1.5px solid #35355a;
 }
 
-/* Input Section */
 .task-input {
   margin-bottom: 28px;
   display: flex;
@@ -69,7 +67,6 @@ body {
   box-shadow: 0 4px 18px #7c83ff33;
 }
 
-/* Task List */
 #task-list {
   list-style-type: none;
   padding: 0;
@@ -118,7 +115,6 @@ body {
   background: #393edd;
 }
 
-/* Alarm Notification Style */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -142,7 +138,6 @@ body {
   box-shadow: 0 0 22px #5c63ff33, 0 2px 12px #5c63ff22;
 }
 
-/* Custom Scrollbar for List */
 #task-list {
   max-height: 340px;
   overflow-y: auto;
