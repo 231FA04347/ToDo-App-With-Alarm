@@ -1,4 +1,4 @@
-// DOM Elements
+
 const taskNameInput = document.getElementById("task-name");
 const taskTimeInput = document.getElementById("task-time");
 const addTaskBtn = document.getElementById("add-task-btn");
@@ -6,7 +6,6 @@ const taskList = document.getElementById("task-list");
 
 let tasks = [];
 
-// Add Task Function
 function addTask() {
   const taskName = taskNameInput.value.trim();
   const taskTime = taskTimeInput.value;
@@ -18,7 +17,7 @@ function addTask() {
 
   const task = {
     name: taskName,
-    time: new Date(taskTime).getTime(), // Convert time to milliseconds
+    time: new Date(taskTime).getTime(), 
     completed: false,
     alarmTriggered: false,
   };
@@ -28,11 +27,9 @@ function addTask() {
   taskNameInput.value = "";
   taskTimeInput.value = "";
 
-  // Schedule Alarm
   scheduleAlarm(task);
 }
 
-// Render Tasks
 function renderTasks() {
   taskList.innerHTML = "";
   tasks.forEach((task, index) => {
@@ -51,19 +48,16 @@ function renderTasks() {
   });
 }
 
-// Mark Task as Completed
 function markCompleted(index) {
   tasks[index].completed = true;
   renderTasks();
 }
 
-// Delete Task
 function deleteTask(index) {
   tasks.splice(index, 1);
   renderTasks();
 }
 
-// Schedule Alarm with Sound
 function scheduleAlarm(task) {
   const now = new Date().getTime();
   const timeDifference = task.time - now;
@@ -80,11 +74,9 @@ function scheduleAlarm(task) {
   }
 }
 
-// Play Alarm Sound
 function playAlarmSound() {
   const audio = new Audio("C:\Users\vajin\Desktop\todo-app\alarm-sound.mp3"); // Path to alarm sound file
   audio.play();
 }
 
-// Event Listener
 addTaskBtn.addEventListener("click", addTask);
